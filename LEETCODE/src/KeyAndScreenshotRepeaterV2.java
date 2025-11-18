@@ -22,7 +22,7 @@ private static final String SCREENSHOT_PATH = DESKTOP_PATH + "/" + SCREENSHOT_FO
 
 public static void main(String[] args) {
     // ### 설정: 원하는 반복 횟수를 여기에 입력하세요. ###
-    int repeatCount = 22; 
+    int repeatCount = 10; 
     // ---------------------------------------------------
 
     System.out.println("프로그램을 시작합니다.");
@@ -48,7 +48,7 @@ public static void main(String[] args) {
         String fileNam = captureScreenshot(robot, 0);
         System.out.println("2. 스크린샷이 저장되었습니다: " + fileNam);
         // 반복 실행
-        for (int i = 1; i <= repeatCount; i++) {
+        for (int i = 1; i < repeatCount; i++) {
             System.out.println("\n--- [" + i + "회차] 작업 시작 ---");
 
             // 3. 오른쪽 화살표 키 누르기 시뮬레이션
